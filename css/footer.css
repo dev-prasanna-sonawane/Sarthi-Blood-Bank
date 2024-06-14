@@ -1,0 +1,49 @@
+#about_us p{
+  margin-top: 2vh;
+}
+ #f_navbar {
+    text-align: left;
+}
+#f_nav_ul {
+    display: flex;
+    margin-left: 19vh;
+    gap:10vh;
+    list-style-type: none;
+}
+#f1_nav_ul {
+    display: flex;
+    margin-left: 9vh;
+    gap: 10vh;
+    list-style-type: none;
+}
+#admin_f_nav_ul {
+    display: flex;
+    margin-left: 25vh;
+    gap: 15vh;
+    list-style-type: none;
+}
+.f_nav_li {
+  color:var(--color);
+}
+.f_nav_sub_ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.f_links {
+  color: white;
+  text-decoration: none;
+}
+.f_links:hover,.f_active {
+  color:white;
+  text-decoration: underline;
+}
+#social_links{
+  margin-right:5vw;
+}
+#scroll_up{
+  float:right;
+  /* margin-right: 30px; */
+  cursor: pointer;
+}
+

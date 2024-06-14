@@ -1,0 +1,22 @@
+/* Donor Dashboard */
+#donor_header{
+    min-height: 10vh;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+#donor_nav{
+    margin-left: 35vw;
+}
+.nav_element{
+   margin-right:2.5vw;
+}
+
+p{
+    margin:5vh;
+    margin-top:0;
+}
+/* Donor Dashboard */

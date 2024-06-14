@@ -1,0 +1,21 @@
+/* Admin Buttons */
+.edit{
+  text-decoration: none;
+  /* color:#04AA6D;
+  background-color: white; */
+  color:white;
+  background-color: #04AA6D;
+  padding:2vh;
+  border-radius: 2vh;
+  margin-bottom: 1vh;
+}
+.remove{
+  text-decoration: none;
+  /* background-color: white; */
+    /* color: rgb(255, 29, 29); */
+  background-color: rgb(255, 29, 29);
+    color: white;
+    padding:2vh;
+    border-radius: 2vh;
+}
+/* Admin Buttons */

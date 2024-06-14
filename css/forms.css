@@ -1,0 +1,131 @@
+/* Body(Middle) */
+
+main {
+  margin: auto;
+  height:max-content;
+}
+.login {
+  background-image:linear-gradient(#89f7fe ,#66a6ff) ;
+  margin-left: 60vh;
+  margin-right: 60vh;
+}
+.login label {
+  width:10vw;
+  text-align: left;
+}
+.small {
+  background-image:linear-gradient(#89f7fe ,#66a6ff) ;
+  margin: 20vh 60vh;
+}
+#appointment_form {
+  background-image:linear-gradient(#89f7fe ,#66a6ff) ;
+  margin:12vh 50vh;
+}
+
+  form {
+  background-image:linear-gradient(#64a5ff,#40e4f0) ;
+  /* background-image:radial-gradient(rgb(252, 176, 252),rgb(205, 136, 255),rgb(150, 150, 255),rgb(107, 255, 107),rgb(255, 199, 95),rgb(255, 255, 136),rgb(255, 96, 96)) ; */
+  /* background-image:conic-gradient(#66a6ff,#89f7fe,rgb(255, 255, 255)) ; */
+  /* background-image:linear-gradient(#00dbde ,#fb83fd) ; */
+  font-size: 1.4vw;
+  border-radius: 8vh;
+  border: var(--border);
+  
+  background-color: rgb(255, 255, 255);
+  /* background: transparent; */
+  padding: 5vh;
+  margin: 20vh;
+  box-shadow: var(--shadow);
+  margin-top: 6vh;
+  /* z-index: 1; */
+  /* text-align: left; */
+ 
+}
+/* img{
+    z-index: 0;
+    width: 100%;
+    height:100%;
+    opacity: 0.6;
+} */
+h4 {
+  /* background-color: rgba(231, 37, 37, 0.815); */
+  background-color: rgba(227, 16, 16, 0.815);
+  /* background-color: var(--color); */
+  font-size:2vw;
+  color:white;
+  border: var(--border);
+  cursor: default;
+  margin:4vh;
+  text-align: center ;
+  padding:1vh;
+}
+
+input{
+  /* background-color: #94f1f3; */
+  /* width:100%; */
+  border:var(--border);
+  border-radius: 2vh;
+  padding: 2vh;
+  margin: 1vh;
+  /* border: 0.5vh transparent; */
+  outline: none;
+
+  
+}
+input[type=text],[type=number],[type=email],[type=password],[type=date],[type=time]{
+  /* font-size: 2.5vh; */
+  width:15vw;
+  height:7vh;
+  /* max-width:14vw;
+  max-height:7vh; */
+}
+/* input[type=radio],[type=checkbox],select{
+  max-width:5vw;
+  max-height:5vh;
+  outline:none;
+  border:var(--border);
+} */
+input:focus {
+  /* border: 0.3vh solid rgb(6, 250, 10); */
+  border: 0.5vh solid rgb(255, 33, 33);
+}
+
+.buttons:hover {
+  background-color: var(--color);
+  color: white;
+  scale: 1.05 ;
+}
+.buttons {
+  cursor: pointer;
+  padding: 2vh;
+  margin: 2vh;
+  border-radius: 2vh;
+}
+label {
+  margin:3vh auto;
+  cursor: pointer;
+  /* width:400px; */
+  /* width:max-content; */
+  display: inline-block;
+ 
+  /* text-align: right; */
+  /* text-align: left; */
+}
+span {
+  display: none;
+  margin-left: 2vh;
+  /* width: 4vw; */
+}
+.error {
+  color: red;
+  font-size: 2.7vh;
+  height:2.5vh;
+  padding: 0.5vh;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Body(Bottom) */

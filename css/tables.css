@@ -1,0 +1,62 @@
+@keyframes bounce {
+  0%,20%,50%,80%,100%{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-35px);
+    
+  }
+  60%{
+    
+    transform: translateY(-15px);
+  }
+ 
+}
+
+table {
+  animation:bounce 1s ;
+  border: var(--border);
+  /* margin:auto; */
+  border-collapse: collapse;
+  margin: 15vh auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+#blood_stock{
+  border: var(--border);
+  /* margin:auto; */
+  width:130vh;
+  /* border-collapse: collapse; */
+  margin: 5vh auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+
+}
+caption{
+  padding-bottom: 3vh;
+}
+thead {
+  background-color: var(--color);
+  color: white;
+}
+tbody {
+  /* background-color: rgba(65, 226, 255, 0.904); */
+
+  /* background-color: rgb(250, 146, 146); */
+  background-color:rgb(255, 229, 229);
+}
+th,
+td {
+  border: var(--border);
+  padding: 3vh;
+}
+/* tr:nth-child(2n) {
+  /* background-color: rgb(174, 243, 255); */
+  /* background-color: rgb(200, 255, 242); */
+  /* background-color:rgb(255 111 111 / 90%); */
+   /* background-color: rgb(255, 186, 186); */
+/* } */ 
+#camp{
+  margin:5vh 10vh 15vh;
+}
+
