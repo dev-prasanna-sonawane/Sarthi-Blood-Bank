@@ -111,8 +111,8 @@ try {
                    Remember that every donation counts. By giving blood, you contribute to saving lives, and your selflessness is commendable. If you missed the appointment due to unforeseen circumstances, consider rescheduling or finding another opportunity to donate.</p>";
             } else if (($row['status'] == $rejected) && ($row['donated'] == $F)) {
 
-                echo "<h2>Your Appointment has been Rejected.</h2>
-                <p>The Requested Date or Time for the Appointment was not Available.So Please select another Date for the Appointment.</p>";
+                echo "<h2>Your Appointment has been Cancelled.</h2>
+                <p>The Requested Date or Time for the Appointment was not Available. So Please select another Date for the Appointment.</p>";
             }
         }
         ?>
@@ -149,7 +149,12 @@ try {
                             if($row['donated']=='Pending'){ 
                                 echo "<td><a href='donor_edit_appointment.php?id=" . $row['appointment_id'] . "' class='edit'>Edit</a></td>
                                  <td><a href='donor_dashboard.php?id=" . $row['appointment_id'] . "' class='remove' onclick='return confirm_cancel()'>Cancel</a></td></tr>";
-                            } else{ 
+                            }
+                            else if($row['donated']=='Failure'){
+                                echo "<td colspan='2'>Appointment is Cancelled</td></tr>";
+
+                            } 
+                            else{ 
                                 echo "<td colspan='2'>Appointment is Completed</td></tr>";
                             }   
                         }

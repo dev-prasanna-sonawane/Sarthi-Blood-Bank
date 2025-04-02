@@ -10,7 +10,6 @@ CREATE TABLE `sarthibloodbank_db`.`admin_details` (`admin_id` INT NOT NULL AUTO_
 
 -- Inserting data
 INSERT INTO `admin_details` (`admin_id`, `admin_name`, `admin_password`) VALUES ('1', 'Prasanna', 'admin1');
-INSERT INTO `admin_details` (`admin_id`, `admin_name`, `admin_password`) VALUES ('2', 'Tushar', 'admin2');
 
 
 
@@ -63,7 +62,7 @@ INSERT INTO `camp_details` (`camp_id`, `org_name`, `o_name`, `o_mobile_no`, `o_e
 -- Changing table structure(DDL commands)
 
 -- Creating Table
-CREATE TABLE `bloodbank_db`.`blood_stock` (`blood_id` INT NOT NULL AUTO_INCREMENT , `blood_group` VARCHAR(10) NOT NULL , `units` INT NOT NULL , PRIMARY KEY (`blood_id`), UNIQUE (`blood_group`));
+CREATE TABLE `sarthibloodbank_db`.`blood_stock` (`blood_id` INT NOT NULL AUTO_INCREMENT , `blood_group` VARCHAR(10) NOT NULL , `units` INT NOT NULL , PRIMARY KEY (`blood_id`), UNIQUE (`blood_group`));
 
 -- Working with data(DML commands)
 

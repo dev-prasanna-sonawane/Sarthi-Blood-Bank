@@ -14,7 +14,7 @@
     </ul>
 </nav><br>
 <div>Copyright &copy; 2024. All rights reserved.</div>
-<div> &reg;Designed And Developed By <strong>Prasanna Sonawane</strong> And <strong>Tushar Chavan.</strong> </div>
+<div> &reg;Designed And Developed By <strong>Prasanna Sonawane</strong>. </div>
 <script>
      document.querySelectorAll('.f_nav_li').forEach(flink => {
       if(flink.href==window.location.href){
