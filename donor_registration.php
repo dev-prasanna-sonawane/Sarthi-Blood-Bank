@@ -133,12 +133,13 @@ try {
 
             <label for="password_reset_answer">What is your Favourite Programming Language :</label>
             <input type="text" id="password_reset_answer" name="password_reset_answer" placeholder="Lowercase Only" value="<?php if (isset($_POST['password_reset_answer'])){echo ($_POST['password_reset_answer']);} ?>"><span id="password_reset_answer_error_logo"><img src="assets/images/cross.png"></span>
-            <div id="password_reset_answer_err" class="error"></div> 
-            
-            <input type="checkbox" name="donor_list" id="donor_list"><label for="donor_list">	I authorise this website to display my name<br> and telephone number in Donor List,<br> So that the needy could contact me, as and when there is an emergency.</label>
-            <div class="error"></div> 
+            <div id="password_reset_answer_err" class="error"></div>
 
-     
+            <div>
+              <input type="checkbox" name="donor_list" id="donor_list"><label for="donor_list">	I grant permission for this website to display my name <br> and telephone number in the Donor List, enabling those <br> in need to reach out to me in times of emergency.<label>
+              <div class="error"></div>
+            </div>
+
 
       <input type="submit" name="d_register" value="Register" class="buttons">
       <input type="reset" name="d_reset" value="Cancel" class="buttons">
