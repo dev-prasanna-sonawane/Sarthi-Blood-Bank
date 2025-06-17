@@ -1,6 +1,5 @@
 <h1>
     <img src="assets/images/back.jpeg" alt="Back Button" id="backbtn" class="logos" onclick="history.back()">
-     <!-- <input type="button" value="Go back!" onclick="history.back()"> -->
   <a class="links" id="main_heading_link" href="admin_dashboard.php">Sarthi Blood Bank </a>
 </h1>
 <nav id="navbar">
@@ -27,7 +26,6 @@
         </li>
         </ul>
 </nav>
-
 <script>
   document.querySelectorAll('.nav_li_links').forEach(link => {
       if(link.href==window.location.href){

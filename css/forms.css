@@ -111,6 +111,19 @@ label {
   /* text-align: right; */
   /* text-align: left; */
 }
+#donor_list{
+  scale: 1.50;
+  cursor:pointer;
+}
+#donor_list:hover{
+  border: 0.5vh solid rgb(255, 33, 33);
+}
+#checkbox_label{
+  display:inline;
+  text-align:justify;
+  line-break: loose;
+  line-height: normal;
+}
 span {
   display: none;
   margin-left: 2vh;

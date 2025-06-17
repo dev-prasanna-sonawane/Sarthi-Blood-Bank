@@ -1,8 +1,9 @@
 <!-- Camp Registration -->
 <?php
+include 'redirect.php';
 include 'db_connection.php';
-//Query Execution
 
+//Query Execution
 try {
   if (isset ($_POST['c_register'])) {
     // Prepare and execute query
@@ -21,9 +22,9 @@ try {
     $query = "INSERT INTO `camp_details` ( `org_name`, `o_name`, `o_mobile_no`, `o_email`, `co_name`, `co_mobile_no`, `camp_name`, `camp_address`, `camp_date`,`camp_start_time` ,`camp_end_time`) VALUES ('$org_name', '$o_name', '$o_mobile_no', '$o_email', '$co_name', '$co_mobile_no', '$c_name', '$c_address','$c_date','$start_time','$end_time')";
 
     if ($conn->query($query)) {
-      echo "<script >alert('Registration Succesfull');</script>";
+      redirect('blood_donation_camps.php','Registration Successful');
     } else {
-      echo "<script>alert('Registration Failed !!!')</script>";
+      onlyAlertMessage('An error occured while Registering Blood Donation Camp, Please Try Again!');
     }
   }
 } catch (PDOException $e) {
@@ -55,37 +56,37 @@ try {
         <h4>Organization Details</h4>
    
       <label for="org_name">Organization Name :</label>
-      <input id="org_name" name="org_name" type="text" required value="<?php if (isset($_POST['org_name'])){echo ($_POST['org_name']);} ?>"><span id="org_name_error_logo"><img src="assets/images/cross.png"></span>
+      <input id="org_name" name="org_name" type="text" required value="<?php if (isset($_POST['org_name'])){echo ($_POST['org_name']);} ?>" placeholder ="Raktache Nate"><span id="org_name_error_logo"><img src="assets/images/cross.png"></span>
       <div id="org_name_err_msg" class="error"></div>
 
       <label for="o_name">Organizer Name :</label>
-      <input id="o_name" name="o_name" type="text" required value="<?php if (isset($_POST['o_name'])){echo ($_POST['o_name']);} ?>"><span id="o_name_error_logo"><img src="assets/images/cross.png"></span>
+      <input id="o_name" name="o_name" type="text" required value="<?php if (isset($_POST['o_name'])){echo ($_POST['o_name']);} ?>" placeholder="Prasanna Sonawane"><span id="o_name_error_logo"><img src="assets/images/cross.png"></span>
       <div id="o_name_err_msg" class="error"></div>
 
       <label for="o_mobile_no">Organizer Mobile No :</label>
-      <input id="o_mobile_no" name="o_mobile_no" type="number" required value="<?php if (isset($_POST['o_mobile_no'])){echo ($_POST['o_mobile_no']);} ?>"><span id="o_mobile_no_error_logo"><img src="assets/images/cross.png"></span>
+      <input id="o_mobile_no" name="o_mobile_no" type="number" required value="<?php if (isset($_POST['o_mobile_no'])){echo ($_POST['o_mobile_no']);} ?>" placeholder = '8984936732'><span id="o_mobile_no_error_logo"><img src="assets/images/cross.png"></span>
       <div id="o_mobile_no_err_msg" class="error"></div>
 
       <label for="o_email">Organizer Email id :</label>
-      <input type="email" id="o_email" name="o_email"  required value="<?php if (isset($_POST['o_email'])){echo ($_POST['o_email']);} ?>"><span id="o_email_error_logo"><img src="assets/images/cross.png"></span>
+      <input type="email" id="o_email" name="o_email"  required value="<?php if (isset($_POST['o_email'])){echo ($_POST['o_email']);} ?>" placeholder="prasanna@demo.com"><span id="o_email_error_logo"><img src="assets/images/cross.png"></span>
       <div id="o_email_err_msg" class="error"></div>
 
       <label for="co_name">Co-Organizer Name :</label>
-      <input id="co_name" name="co_name" type="text" required value="<?php if (isset($_POST['co_name'])){echo ($_POST['co_name']);} ?>"><span id="co_name_error_logo"><img src="assets/images/cross.png"></span>
+      <input id="co_name" name="co_name" type="text" required value="<?php if (isset($_POST['co_name'])){echo ($_POST['co_name']);} ?>" placeholder="Tushar"><span id="co_name_error_logo"><img src="assets/images/cross.png"></span>
       <div id="co_name_err_msg" class="error"></div>
 
       <label for="co_mobile_no">Co-Organizer Mobile No :</label>
-      <input id="co_mobile_no" name="co_mobile_no" type="number" required value="<?php if (isset($_POST['co_mobile_no'])){echo ($_POST['co_mobile_no']);} ?>"><span id="co_mobile_no_error_logo"><img src="assets/images/cross.png"></span>
+      <input id="co_mobile_no" name="co_mobile_no" type="number" required value="<?php if (isset($_POST['co_mobile_no'])){echo ($_POST['co_mobile_no']);} ?>" placeholder = '9786936732'><span id="co_mobile_no_error_logo"><img src="assets/images/cross.png"></span>
       <div id="co_mobile_no_err_msg" class="error"></div>
 
         <h4>Camp Details</h4>
      
       <label for="c_name">Camp Name :</label>
-      <input id="c_name" name="c_name" type="text" required value="<?php if (isset($_POST['c_name'])){echo ($_POST['c_name']);} ?>"><span id="c_name_error_logo"><img src="assets/images/cross.png"></span>
+      <input id="c_name" name="c_name" type="text" required value="<?php if (isset($_POST['c_name'])){echo ($_POST['c_name']);} ?>" placeholder="Blood Connect"><span id="c_name_error_logo"><img src="assets/images/cross.png"></span>
       <div id="c_name_err_msg" class="error"></div>
       
       <label for="c_address" id="c_address">Camp Address :</label>
-      <input id="c_address" name="c_address" type="text" class="address" required value="<?php if (isset($_POST['c_address'])){echo ($_POST['c_address']);} ?>"></input>
+      <input id="c_address" name="c_address" type="text" class="address" required value="<?php if (isset($_POST['c_address'])){echo ($_POST['c_address']);} ?>" placeholder="Pune,India" title="Be Specific/Descriptive"></input>
       <div class="error"></div>
       
       <label for="c_date">Camp Date :</label>

@@ -7,13 +7,13 @@ CREATE DATABASE `sarthibloodbank_db`;
 -- Changing table structure(DDL commands)
 
 -- Creating Table
-CREATE TABLE `sarthibloodbank_db`.`admin_details` (`admin_id` INT NOT NULL AUTO_INCREMENT , `admin_name` VARCHAR(100) NOT NULL , `admin_password` VARCHAR(100) NOT NULL , PRIMARY KEY (`admin_id`), UNIQUE (`admin_name`));
+CREATE TABLE `sarthibloodbank_db`.`admin_details` (`admin_id` INT NOT NULL AUTO_INCREMENT , `admin_name` VARCHAR(100) NOT NULL , `admin_password` VARCHAR(255) NOT NULL , PRIMARY KEY (`admin_id`), UNIQUE (`admin_name`));
 
 -- Working with data(DML commands)
 
 -- Inserting data
-INSERT INTO `sarthibloodbank_db`.`admin_details` (`admin_id`, `admin_name`, `admin_password`) VALUES ('1', 'Prasanna', 'admin1');
-
+INSERT INTO `sarthibloodbank_db`.`admin_details` (`admin_id`, `admin_name`, `admin_password`) VALUES ('1', 'Prasanna', '$2y$10$gW99Iu.Py4S0GmJSZMobM.3fRkbhdtKvQd00Ax2NkN4XGTapBZUpO');
+-- The hash is for admin1
 
 
 -- 2. Donor TABLE(donor_details)
@@ -21,11 +21,12 @@ INSERT INTO `sarthibloodbank_db`.`admin_details` (`admin_id`, `admin_name`, `adm
 -- Changing table structure(DDL commands)
 
 -- Creating Table
-CREATE TABLE `sarthibloodbank_db`.`donor_details` (`donor_id` INT NOT NULL AUTO_INCREMENT , `donor_name` VARCHAR(100) NOT NULL , `age` INT(20) NOT NULL , `gender` VARCHAR(50) NOT NULL , `blood_group` VARCHAR(50) NOT NULL , `address` TEXT NOT NULL , `mobile_no` DOUBLE NOT NULL , `alternate_mobile_no` DOUBLE NOT NULL , `email` VARCHAR(50) NOT NULL , `donor_password` VARCHAR(50) NOT NULL , `password_reset_answer` VARCHAR(50) NOT NULL , `donor_list` VARCHAR(10) NOT NULL , PRIMARY KEY (`donor_id`), UNIQUE (`email`));
+CREATE TABLE `sarthibloodbank_db`.`donor_details` (`donor_id` INT NOT NULL AUTO_INCREMENT , `donor_name` VARCHAR(100) NOT NULL , `age` INT(20) NOT NULL , `gender` VARCHAR(50) NOT NULL , `blood_group` VARCHAR(50) NOT NULL , `address` TEXT NOT NULL , `mobile_no` DOUBLE NOT NULL , `alternate_mobile_no` DOUBLE NOT NULL , `email` VARCHAR(50) NOT NULL , `donor_password` VARCHAR(255) NOT NULL , `password_reset_answer` VARCHAR(50) NOT NULL , `donor_list` VARCHAR(10) NOT NULL , PRIMARY KEY (`donor_id`), UNIQUE (`email`));
 
 -- Working with data(DML commands)
 -- Inserting data
-INSERT INTO `sarthibloodbank_db`.`donor_details` ( `donor_id`,`donor_name`, `age`, `gender`, `blood_group`, `address`, `mobile_no`, `alternate_mobile_no`, `email`, `donor_password`,`password_reset_answer`,`donor_list`) VALUES ('1','prasanna', '21', 'male', 'B+', 'Pune', '8956034889', '8954052171', '2003psf@gmail.com','prasanna1','Java','on');
+INSERT INTO `sarthibloodbank_db`.`donor_details` ( `donor_id`,`donor_name`, `age`, `gender`, `blood_group`, `address`, `mobile_no`, `alternate_mobile_no`, `email`, `donor_password`,`password_reset_answer`,`donor_list`) VALUES ('1','prasanna', '21', 'male', 'B+', 'Pune', '8956034889', '8954052171', '2003psf@gmail.com','$2y$10$5FORe6PN2t80bJNkkS5zduHJbDQ0yk443gn9xDG2T1ha30DyjXdU6','java','on');
+-- The hash is for prasanna1
 
 
 
@@ -42,7 +43,7 @@ ALTER TABLE `sarthibloodbank_db`.`appointments` ADD FOREIGN KEY (`donor_id`) REF
 -- Working with data(DML commands)
 
 -- Inserting data
-INSERT INTO `sarthibloodbank_db`.`appointments` (`donor_id`,`donor_name`, `appointment_id`, `appointment_date`,`appointment_time`, `status`,`donated`) VALUES ('1','prasanna', '246', '2024-04-30','16:00:00','Pending','Pending');
+INSERT INTO `sarthibloodbank_db`.`appointments` (`donor_id`,`donor_name`, `appointment_id`, `appointment_date`,`appointment_time`, `status`,`donated`) VALUES ('1','prasanna', '246', '2025-12-30','16:00:00','Pending','Pending');
 
 
 
@@ -56,7 +57,7 @@ CREATE TABLE `sarthibloodbank_db`.`camp_details` (`camp_id` INT NOT NULL AUTO_IN
 -- Working with data(DML commands)
 
 -- Inserting data
-INSERT INTO `sarthibloodbank_db`.`camp_details` (`camp_id`, `org_name`, `o_name`, `o_mobile_no`, `o_email`, `co_name`, `co_mobile_no`, `camp_name`, `camp_address`, `camp_date`, `camp_start_time`, `camp_end_time`) VALUES ('1', 'Raktache Nate', 'Prasanna', '8956034889', '2003psf@gmail.com', 'Tushar', '8954038893', 'Blood Connect', '310 Ghorpade Peth,Pune', '2024-03-31', '08:00:00', '18:00:00');
+INSERT INTO `sarthibloodbank_db`.`camp_details` (`camp_id`, `org_name`, `o_name`, `o_mobile_no`, `o_email`, `co_name`, `co_mobile_no`, `camp_name`, `camp_address`, `camp_date`, `camp_start_time`, `camp_end_time`) VALUES ('1', 'Raktache Nate', 'Prasanna', '8956034889', '2003psf@gmail.com', 'Tushar', '8954038893', 'Blood Connect', '310 Ghorpade Peth,Pune', '2025-12-31', '08:00:00', '18:00:00');
 
 
 
