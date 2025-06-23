@@ -133,7 +133,7 @@ try {
                 <input type="text" id="password_reset_answer" name="password_reset_answer" placeholder="Lowercase Only" value="<?php if (isset($_POST['password_reset_answer'])){echo ($_POST['password_reset_answer']);} ?>"><span id="password_reset_answer_error_logo"><img src="assets/images/cross.png"></span>
         <div id="password_reset_answer_err" class="error"></div> 
         
-        <div style="margin: 0 100px;">
+        <div style="margin: 10px 100px;">
                     <input type="checkbox" name="donor_list" id="donor_list">
                     <label for="donor_list" id="checkbox_label">
                     I grant permission for this website to display my name  and mobile number in the Donor List, enabling those  in need to reach out to me in times of emergency.

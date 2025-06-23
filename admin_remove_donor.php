@@ -59,7 +59,7 @@ if (isset ($_GET["id"])) {
 
                     try {
                         // Prepare and execute query                          
-                        $q = "SELECT `donor_id,donor_name,age,gender,blood_group,mobile_no,alternate_mobile_no,address` FROM `donor_details`";
+                        $q = "SELECT `donor_id`,`donor_name`,`age`,`gender`,`blood_group`,`mobile_no`,`alternate_mobile_no`,`address` FROM `donor_details`";
                         $res = $conn->query($q);
                         while ($row = $res->fetch()) {
                             echo "
