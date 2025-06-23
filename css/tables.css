@@ -22,7 +22,7 @@ table {
   text-align: center;
   box-shadow: var(--shadow);
 }
-#blood_stock{
+#blood_inventory{
   border: var(--border);
   /* margin:auto; */
   width:130vh;

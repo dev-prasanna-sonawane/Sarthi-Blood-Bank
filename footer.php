@@ -9,7 +9,7 @@
     </li>
     <li class="f_nav_li"> <strong>Request Blood</strong>
       <ul class="f_nav_sub_ul">
-        <li><a class="f_links f_nav_sub_li" href="blood_availability.php">Blood Availability</a></li>
+        <li><a class="f_links f_nav_sub_li" href="blood_inventory.php">Blood Inventory</a></li>
         <li><a class="f_links f_nav_sub_li" href="donor_list.php">Donor List</a></li>
         <li><a class="f_links f_nav_sub_li" href="index.php#comp_info">Blood Compatibility</a></li>
       </ul>

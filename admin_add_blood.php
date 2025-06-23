@@ -32,12 +32,12 @@ if (!isset ($_SESSION['logged_in']) || $_SESSION["logged_in"] != true) {
                 $units = $_POST['units'];
                 $id = $_POST['blood_id'];
                 
-                $query = "SELECT * FROM `blood_stock` WHERE `blood_id`='$id'";
+                $query = "SELECT * FROM `blood_inventory` WHERE `blood_id`='$id'";
                 $statement = $conn->prepare($query);
                 $statement->execute();
                 $res = $statement->fetch(PDO::FETCH_ASSOC);
                 $total = $res['units'] + $units;
-                $add = "UPDATE `blood_stock` SET `units`='$total' WHERE `blood_id` = '$id'";
+                $add = "UPDATE `blood_inventory` SET `units`='$total' WHERE `blood_id` = '$id'";
                 if ($conn->query($add)) {
                     redirect('admin_dashboard.php','Blood Added Succesfully');
                 } else {
@@ -46,7 +46,7 @@ if (!isset ($_SESSION['logged_in']) || $_SESSION["logged_in"] != true) {
             }
             if (isset ($_GET["id"])) {
                 $id = $_GET['id'];
-                $query = "SELECT * FROM `blood_stock` WHERE `blood_id`='$id'";
+                $query = "SELECT * FROM `blood_inventory` WHERE `blood_id`='$id'";
                 $statement = $conn->prepare($query);
                 $statement->execute();
                 $res = $statement->fetch(PDO::FETCH_ASSOC); //ALL

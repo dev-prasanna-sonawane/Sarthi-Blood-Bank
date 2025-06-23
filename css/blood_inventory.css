@@ -1,16 +1,16 @@
-/* BLOOD Availability Page */
-#blood_availability_container{
+/* BLOOD inventory Page */
+#blood_inventory_container{
   height: fit-content;
   padding: 6vh;
 }
-#blood_availability_bg{
+#blood_inventory_bg{
   width: auto;
   height: 100%;
   position: absolute;
   z-index: -1;
 }
 
-#blood_availability_sub_container{
+#blood_inventory_sub_container{
    display: flex;
     height: fit-content;
     gap: 15vh;
@@ -18,7 +18,7 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
-.blood_availability_cells{
+.blood_inventory_cells{
     border-radius: 10vh;
     box-shadow: var(--shadow);
     background-color: rgb(218, 72, 72);
@@ -26,4 +26,4 @@
     font-size: 2vw;
     color: white;
 }
-/* BLOOD Availability Page */
+/* BLOOD inventory Page */

@@ -221,7 +221,7 @@ try {
                 <div id="password_reset_answer_err" class="error"></div> 
                 
                 <label for="donor_list">Donor List Checkbox :</label>
-                <input type="text" name="donor_list" id="donor_list" value="<?= $result['donor_list']; ?>">
+                <input type="text" name="donor_list" id="donord_list" value="<?= $result['donor_list']; ?>">
                 <div  class="error"></div> 
                 
                 <input type="submit" name="d_update" value="Update" class="buttons">

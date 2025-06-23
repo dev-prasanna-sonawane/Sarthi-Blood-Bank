@@ -61,22 +61,22 @@ INSERT INTO `sarthibloodbank_db`.`camp_details` (`camp_id`, `org_name`, `o_name`
 
 
 
--- 5. Blood Stock TABLE(blood_stock)
+-- 5. Blood Inventory TABLE(blood_inventory)
 
 -- Changing table structure(DDL commands)
 
 -- Creating Table
-CREATE TABLE `sarthibloodbank_db`.`blood_stock` (`blood_id` INT NOT NULL AUTO_INCREMENT , `blood_group` VARCHAR(10) NOT NULL , `units` INT NOT NULL , PRIMARY KEY (`blood_id`), UNIQUE (`blood_group`));
+CREATE TABLE `sarthibloodbank_db`.`blood_inventory` (`blood_id` INT NOT NULL AUTO_INCREMENT , `blood_group` VARCHAR(10) NOT NULL , `units` INT NOT NULL , PRIMARY KEY (`blood_id`), UNIQUE (`blood_group`));
 
 -- Working with data(DML commands)
 
 -- Inserting data
-INSERT INTO `sarthibloodbank_db`.`blood_stock` (`blood_id`, `blood_group`, `units`) VALUES ('1', 'A+', '200');
-INSERT INTO `sarthibloodbank_db`.`blood_stock` (`blood_id`, `blood_group`, `units`) VALUES ('2', 'A-', '200');
-INSERT INTO `sarthibloodbank_db`.`blood_stock` (`blood_id`, `blood_group`, `units`) VALUES ('3', 'B+', '200');
-INSERT INTO `sarthibloodbank_db`.`blood_stock` (`blood_id`, `blood_group`, `units`) VALUES ('4', 'B-', '200');
-INSERT INTO `sarthibloodbank_db`.`blood_stock` (`blood_id`, `blood_group`, `units`) VALUES ('5', 'AB+', '200');
-INSERT INTO `sarthibloodbank_db`.`blood_stock` (`blood_id`, `blood_group`, `units`) VALUES ('6', 'AB-', '200');
-INSERT INTO `sarthibloodbank_db`.`blood_stock` (`blood_id`, `blood_group`, `units`) VALUES ('7', 'O+', '200');
-INSERT INTO `sarthibloodbank_db`.`blood_stock` (`blood_id`, `blood_group`, `units`) VALUES ('8', 'O-', '200');
+INSERT INTO `sarthibloodbank_db`.`blood_inventory` (`blood_id`, `blood_group`, `units`) VALUES ('1', 'A+', '200');
+INSERT INTO `sarthibloodbank_db`.`blood_inventory` (`blood_id`, `blood_group`, `units`) VALUES ('2', 'A-', '200');
+INSERT INTO `sarthibloodbank_db`.`blood_inventory` (`blood_id`, `blood_group`, `units`) VALUES ('3', 'B+', '200');
+INSERT INTO `sarthibloodbank_db`.`blood_inventory` (`blood_id`, `blood_group`, `units`) VALUES ('4', 'B-', '200');
+INSERT INTO `sarthibloodbank_db`.`blood_inventory` (`blood_id`, `blood_group`, `units`) VALUES ('5', 'AB+', '200');
+INSERT INTO `sarthibloodbank_db`.`blood_inventory` (`blood_id`, `blood_group`, `units`) VALUES ('6', 'AB-', '200');
+INSERT INTO `sarthibloodbank_db`.`blood_inventory` (`blood_id`, `blood_group`, `units`) VALUES ('7', 'O+', '200');
+INSERT INTO `sarthibloodbank_db`.`blood_inventory` (`blood_id`, `blood_group`, `units`) VALUES ('8', 'O-', '200');
 

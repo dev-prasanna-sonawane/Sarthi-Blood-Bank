@@ -28,9 +28,9 @@ if (!isset ($_SESSION['logged_in']) || $_SESSION["logged_in"] != true) {
       <h1>Welcome
         <?php echo $_SESSION['admin_name'] ?>
       </h1>
-      <table id="blood_stock">
+      <table id="blood_inventory">
         <caption>
-          <h2>Manage Blood Stock</h2>
+          <h2>Manage Blood inventory</h2>
         </caption>
         <thead>
           <tr>
@@ -45,7 +45,7 @@ if (!isset ($_SESSION['logged_in']) || $_SESSION["logged_in"] != true) {
             include 'db_connection.php';
           try {
             // Prepare and execute query      
-            $q = "SELECT * FROM `blood_stock`";
+            $q = "SELECT * FROM `blood_inventory`";
             $res = $conn->query($q);
             while ($row = $res->fetch()) {
               echo "

@@ -10,7 +10,7 @@
     <li class="nav_li li"> Request Blood
       <ul class="nav_sub_ul">
         <li class="nav_sub_li li">
-          <a class="links  nav_sub_li_links" href="blood_availability.php">Blood Availability</a>
+          <a class="links  nav_sub_li_links" href="blood_inventory.php">Blood Inventory</a>
         </li>
         <li class="nav_sub_li li">
           <a class="links nav_sub_li_links" href="donor_list.php">Donor List</a>

@@ -123,32 +123,32 @@ DELETE FROM `sarthibloodbank_db`.`camp_details` WHERE `camp_id` ='2';
 
 
 
--- 5. Blood Stock TABLE(blood_stock)
+-- 5. Blood Inventory TABLE(blood_inventory)
 
 -- Changing table structure(DDL commands)
 
 -- Creating Table
-CREATE TABLE `sarthibloodbank_db`.`blood_stock` (`blood_id` INT NOT NULL AUTO_INCREMENT , `blood_group` VARCHAR(10) NOT NULL , `units` INT NOT NULL , PRIMARY KEY (`blood_id`), UNIQUE (`blood_group`));
+CREATE TABLE `sarthibloodbank_db`.`blood_inventory` (`blood_id` INT NOT NULL AUTO_INCREMENT , `blood_group` VARCHAR(10) NOT NULL , `units` INT NOT NULL , PRIMARY KEY (`blood_id`), UNIQUE (`blood_group`));
 
 -- Deleting whole table
-Drop TABLE `sarthibloodbank_db`.`blood_stock`;
+Drop TABLE `sarthibloodbank_db`.`blood_inventory`;
 
 -- Deleting columns
-ALTER TABLE `sarthibloodbank_db`.`blood_stock` DROP `blood_group`;
+ALTER TABLE `sarthibloodbank_db`.`blood_inventory` DROP `blood_group`;
 
 
 -- Working with data(DML commands)
 
 -- Inserting data
-INSERT INTO `sarthibloodbank_db`.`blood_stock` (`blood_id`, `blood_group`, `units`) VALUES ('1', 'A+', '200');
+INSERT INTO `sarthibloodbank_db`.`blood_inventory` (`blood_id`, `blood_group`, `units`) VALUES ('1', 'A+', '200');
 
 -- Selecting data
-SELECT * FROM `sarthibloodbank_db`.`blood_stock`;
+SELECT * FROM `sarthibloodbank_db`.`blood_inventory`;
 
 -- Updating data
-UPDATE `sarthibloodbank_db`.`blood_stock` SET `blood_group`='A+' WHERE `blood_id`='1';
+UPDATE `sarthibloodbank_db`.`blood_inventory` SET `blood_group`='A+' WHERE `blood_id`='1';
 
 -- Deleting rows
-DELETE FROM `sarthibloodbank_db`.`blood_stock` WHERE `blood_id` ='2';
+DELETE FROM `sarthibloodbank_db`.`blood_inventory` WHERE `blood_id` ='2';
 
 
